@@ -18,10 +18,14 @@ namespace ClassTask25.Controllers
         {
             List<Slider> sliders = _context.Sliders.ToList();
             List<Product> products = _context.Products.ToList();
+            List<Category> categories = _context.Categories.ToList();
+
             HomeVM homeVM = new HomeVM()
             {
                 Sliders = sliders,
-                Products = products
+                Products = products,
+                Categories= categories
+                
             };
 
 

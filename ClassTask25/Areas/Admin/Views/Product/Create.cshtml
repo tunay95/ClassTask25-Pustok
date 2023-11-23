@@ -1,0 +1,30 @@
+﻿@using ClassTask25.Models
+@model Product
+
+<div class="container">
+	<form method="post" enctype="multipart/form-data">
+		<div class="row">
+			<div class="mb-3 col-md-3">
+				<label asp-for="Id" class="form-label">Id</label>
+				<input asp-for="Id" class="form-control">
+				<span asp-validation-for="Id" style="color:red"></span>
+			</div>
+			<div class="mb-3 col-md-3">
+				<label asp-for="Name" class="form-label">Name</label>
+				<input asp-for="Name" class="form-control">
+				<span asp-validation-for="Name" style="color:red"></span>
+			</div>
+			<div class="mb-3 col-md-3">
+				<label asp-for="Name" class="form-label">Name</label>
+				<input asp-for="Name" class="form-control">
+				<span asp-validation-for="Name" style="color:red"></span>
+			</div>
+			<div class="mb-3 col-md-3">
+				<label asp-for="Name" class="form-label">Name</label>
+				<input asp-for="Name" class="form-control">
+				<span asp-validation-for="Name" style="color:red"></span>
+			</div>
+		</div>
+		<button type="submit" class="btn btn-primary">Submit</button>
+	</form>
+</div>
