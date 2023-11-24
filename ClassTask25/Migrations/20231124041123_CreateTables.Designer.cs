@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ClassTask25.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20231123125411_CreateCategoryTable")]
-    partial class CreateCategoryTable
+    [Migration("20231124041123_CreateTables")]
+    partial class CreateTables
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

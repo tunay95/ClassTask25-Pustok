@@ -17,7 +17,7 @@ namespace ClassTask25.Areas.Admin.Controllers
 
         public IActionResult Index()
         {
-            List<Category> categories = _context.Categories.ToList();
+            ICollection<Category> categories = _context.Categories.ToICollection();
             return View(categories);
 
         }
@@ -35,7 +35,7 @@ namespace ClassTask25.Areas.Admin.Controllers
             }
             _context.Categories.Add(category);
             _context.SaveChanges();
-            return RedirectToAction("Index", "Category");
+            return RedirectToAction("Index","Category");
         }
     }
 }

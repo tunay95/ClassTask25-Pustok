@@ -6,7 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<AppDbContext>( opt =>
 {
-    opt.UseSqlServer("Server=DESKTOP-UTD7S5H;database=ClassTask25;Trusted_connection=true;Integrated security=true;Encrypt=false");
+    opt.UseSqlServer(builder.Configuration.GetConnectionString("Default"));
 }); 
 
 var app = builder.Build();
